@@ -60,6 +60,18 @@ La documentación de la API está disponible en:
 http://127.0.0.1:5000/apidocs/
 ```
 
+## Pruebas Unitarias
+
+Se han agregado pruebas unitarias para la API utilizando el módulo `unittest`. Para ejecutarlas, sigue estos pasos:
+
+1. Asegúrate de que el entorno virtual esté activado.
+2. Ejecuta las pruebas con el siguiente comando:
+   ```bash
+   python -m unittest test_app.py
+   ```
+
+Esto ejecutará las pruebas definidas en el archivo `test_app.py` y mostrará los resultados en la terminal.
+
 ## Notas
 
 - Asegúrate de que `pip` esté instalado en tu sistema. Si no lo está, instálalo usando:
