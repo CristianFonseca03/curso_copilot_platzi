@@ -16,6 +16,14 @@ func main() {
         })
     })
 
+	// Define un endpoint GET para recibir una cadena
+	r.GET("/saludo/:cadena", func(c *gin.Context) {
+		cadena := c.Param("cadena")
+		c.JSON(http.StatusOK, gin.H{
+			"message": "Hola: " + cadena,
+		})
+	})
+
     // Define un endpoint POST
     r.POST("/data", func(c *gin.Context) {
         var jsonData map[string]interface{}
